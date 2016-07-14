@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<!-- 
-   <feature url="features/nl.esciencecenter.e3dchem.feature-1.0.0.jar" id="nl.esciencecenter.e3dchem.feature" version="1.0.0">
-      <category name="nl.esciencecenter.3D-e-Chem"/>
-   </feature>  -->
-   <bundle id="nl.esciencecenter.e3dchem.plugin" version="1.0.0">
-      <category name="nl.esciencecenter.3D-e-Chem"/>
-   </bundle>
-   <category-def name="nl.esciencecenter.3D-e-Chem" label="KNIME 3D-e-Chem Contributions">
-      <description>
-         3D-e-Chem: Collection KNIME nodes &amp; Extensions for the NLeSC 3d-e-Chem project
-      </description>
-   </category-def>
+	<feature url="features/nl.esciencecenter.e3dchem.feature-1.0.0.jar"
+		id="nl.esciencecenter.e3dchem.feature" version="1.0.0">
+		<category name="nl.esciencecenter.3D-e-Chem" />
+	</feature>
+	<bundle id="nl.esciencecenter.e3dchem.plugin" version="1.0.0">
+		<category name="nl.esciencecenter.3D-e-Chem" />
+	</bundle>
+	<category-def name="nl.esciencecenter.3D-e-Chem" label="KNIME 3D-e-Chem Contributions">
+		<description>
+			3D-e-Chem: Collection KNIME nodes &amp; Extensions for the NLeSC 3d-e-Chem
+			project
+		</description>
+	</category-def>
 </site>
