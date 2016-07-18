@@ -31,6 +31,7 @@ For node developers which want
 
 Can respectively been done by
 
+0. Add https://3d-e-chem.github.io/updates to list of repositories or p2 update sites (in pom.xml)
 1. Plugin of node must depend on `nl.esciencecenter.e3dchem.plugin` (in plugin/META-INF/MANIFEST.MF)
 2. Node category must be have `/community/3d-e-chem` as path (in category extension in plugin/plugin.xml file)
 3. Node feature must be in includes of this feature (feature/feature.xml of this repo).
