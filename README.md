@@ -90,18 +90,10 @@ During import the Tycho Eclipse providers must be installed.
 mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<version>
 ```
 
-3. Commit and push changes.
-4. Create a checkout of gh-pages branch
+3. Update `docs/` directory with new update site using
 
 ```
-git clone git@github.com:3D-e-Chem/knime-node-collection.git --branch gh-pages gh-pages
-```
-Or when `gh-pages` directory already exists perform a `git pull` in it.
-
-5. Update gh-pages branch with content of `p2/target/repository` directory with
-
-```
-mvn install -Dtarget.update.site=$PWD/gh-pages
+mvn install
 ```
 
-6. Commit & push changes in `gh-pages` directory.
+4. Commit and push changes.
