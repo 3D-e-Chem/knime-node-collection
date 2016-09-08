@@ -1,7 +1,6 @@
 KNIME feature for all 3D-e-Chem nodes.
-Also contains 3D-e-Chem KNIME node category and splash screen. 
 
-[![Build Status](https://travis-ci.org/3D-e-Chem/knime-3d-e-chem.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-3d-e-chem)
+[![Build Status](https://travis-ci.org/3D-e-Chem/knime-node-collection.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-node-collection)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
@@ -15,26 +14,44 @@ Steps to get the 3D-e-Chem nodes inside KNIME:
 
 1. Goto Help > Install new software ... menu
 2. Press add button
-3. Fill text fields with https://3d-e-chem.github.io/updates.
+3. Fill text fields with `https://3d-e-chem.github.io/knime-node-collection`
 4. Select --all sites-- in `work with` pulldown
 5. Select `3D-e-Chem KNIME nodes`
 6. Install software
 7. Restart KNIME
 
-# Adding a KNIME node
+# Background
 
-For node developers which want
+Each KNIME node developed in the 3D-e-Chem project has it own Github repository Eclipse feature and Eclipse plugin.
 
-1. During the start of KNIME show the project logo
-2. Nest node in 3D-e-Chem category.
-3. Include his/her node when installing 3D-e-Chem KNIME nodes
+The update site `https://3d-e-chem.github.io/updates` contains the Eclipse features of all the 3D-e-Chem developed nodes.
+When using this update site in KNIME it will list all the nodes by their repository.
 
-Can respectively been done by
+The update site `https://3d-e-chem.github.io/knime-node-collection` contains a single Eclipse feature which combines all the 3D-e-Chem developed nodes. When using this update site in KNIME it will a single feature for all 3D-e-Chem nodes.
 
-0. Add https://3d-e-chem.github.io/updates to list of repositories or p2 update sites (in pom.xml)
-1. Plugin of node must depend on `nl.esciencecenter.e3dchem.plugin` (in plugin/META-INF/MANIFEST.MF)
-2. Node category must be have `/community/3d-e-chem` as path (in category extension in plugin/plugin.xml file)
-3. Node feature must be in includes of this feature (feature/feature.xml of this repo).
+Cons:
+
+* New nodes need to be tracked in the feature/feature.xml file
+* Each update of a a node requires a new release of this repo aswell
+* License is for all nodes together instead of separate license for each node
+* Maintenance overhead of 2 update sites (1. only 3D-e-Chem nodes feature, 2. set of 3D-e-Chem node features)
+
+Pros:
+
+* Single checkbox to install all 3D-e-Chem nodes
+* Easy to integrate into KNIME Community Contributions update site (https://tech.knime.org/book/general-instructions)
+
+# Adding a new KNIME node
+
+To include a KNIME node into the 3D-e-Chem KNIME nodes feature, it's plugin must be added to config file called `feature/feature.xml`.
+
+Note! The node must be available in the `https://3d-e-chem.github.io/updates` update site.
+
+# Releasing a new version of a KNIME node
+
+The updated KNIME node can be included in the 3D-e-Chem nodes feature be creating a (new release)[#new_release], see below.
+
+Note! The new version of the node must be available in the `https://3d-e-chem.github.io/updates` update site.
 
 # Build
 
@@ -52,7 +69,7 @@ Steps to get development environment setup:
 1. Download KNIME SDK from https://www.knime.org/downloads/overview
 2. Install/Extract/start KNIME SDK
 3. Start SDK
-4. Install m2e (Maven integration for Eclipse) 
+4. Install m2e (Maven integration for Eclipse)
 
     1. Goto Help > Install new software ...
     2. Make sure Update site is http://update.knime.org/analytics-platform/3.1 and https://3d-e-chem.github.io/updates are in the pull down list otherwise add it
@@ -67,12 +84,24 @@ During import the Tycho Eclipse providers must be installed.
 # New release
 
 1. Make sure all included features are up to date on https://3d-e-chem.github.io/updates
-2. Update versions in pom files with `mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<version>` command.
-3. Commit and push changes
-4. Create package with `mvn package`, will create update site in `p2/target/repository`
-5. Append new release to an update site
+2. Update versions in pom files with
 
-  1. Make clone of an update site repo
-  2. Append release to the update site with `mvn install -Dtarget.update.site=<path to update site>`
+```
+mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<version>
+```
 
-6. Commit and push changes in this repo and update site repo.
+3. Commit and push changes.
+4. Create a checkout of gh-pages branch
+
+```
+git clone git@github.com:3D-e-Chem/knime-node-collection.git --branch gh-pages gh-pages
+```
+Or when `gh-pages` directory already exists perform a `git pull` in it.
+
+5. Update gh-pages branch with content of `p2/target/repository` directory with
+
+```
+mvn install -Dtarget.update.site=$PWD/gh-pages
+```
+
+6. Commit & push changes in `gh-pages` directory.

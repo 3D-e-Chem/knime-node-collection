@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>nl.esciencecenter.e3dchem</groupId>
-		<artifactId>nl.esciencecenter.e3dchem</artifactId>
-		<version>1.0.0</version>
+		<groupId>nl.esciencecenter.e3dchem.collection</groupId>
+		<artifactId>nl.esciencecenter.e3dchem.collection</artifactId>
+		<version>1.0.1</version>
 	</parent>
 
-	<artifactId>nl.esciencecenter.e3dchem.feature</artifactId>
+	<artifactId>nl.esciencecenter.e3dchem.collection.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
 </project>

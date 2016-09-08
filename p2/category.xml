@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site><!-- TODO when all project nodes use this plugin then this feature can be used to install them
-	<feature url="features/nl.esciencecenter.e3dchem.feature-1.0.0.jar"
-		id="nl.esciencecenter.e3dchem.feature" version="1.0.0">
-		<category name="nl.esciencecenter.3D-e-Chem" />
+<site>
+	<feature url="features/nl.esciencecenter.e3dchem.collection.feature-1.0.1.jar"
+		id="nl.esciencecenter.e3dchem.collection.feature" version="1.0.1">
+		<category name="org.knime.community.build.config/category.xml.cheminf" />
 	</feature>
-	-->
-	<bundle id="nl.esciencecenter.e3dchem.plugin" version="1.0.0">
-		<category name="nl.esciencecenter.3D-e-Chem" />
-	</bundle>
-	<category-def name="nl.esciencecenter.3D-e-Chem" label="KNIME 3D-e-Chem Contributions">
+	<category-def name="org.knime.community.build.config/category.xml.cheminf" label="KNIME Community Contributions - Cheminformatics">
 		<description>
-			3D-e-Chem: Collection KNIME nodes &amp; Extensions for the NLeSC 3d-e-Chem
-			project
+			This category contains KNIME extension for cheminformatic applications contributed by the community.
 		</description>
 	</category-def>
 </site>
