@@ -25,14 +25,14 @@ Steps to get the 3D-e-Chem nodes inside KNIME:
 Each KNIME node developed in the 3D-e-Chem project has it own Github repository Eclipse feature and Eclipse plugin.
 
 The update site `https://3d-e-chem.github.io/updates` contains the Eclipse features of all the 3D-e-Chem developed nodes.
-When using this update site in KNIME it will list all the nodes by their repository.
+When using this update site in KNIME, it will list all the nodes by their repository.
 
-The update site `https://3d-e-chem.github.io/knime-node-collection` contains a single Eclipse feature which combines all the 3D-e-Chem developed nodes. When using this update site in KNIME it will a single feature for all 3D-e-Chem nodes.
+The update site `https://3d-e-chem.github.io/knime-node-collection` contains a single Eclipse feature which combines all the 3D-e-Chem developed nodes. When using this update site in KNIME, it will list a single feature for all 3D-e-Chem nodes.
 
 Cons:
 
 * New nodes need to be tracked in the feature/feature.xml file
-* Each update of a a node requires a new release of this repo aswell
+* Each update of a node requires a new release of this repo aswell
 * License is for all nodes together instead of separate license for each node
 * Maintenance overhead of 2 update sites (1. only 3D-e-Chem nodes feature, 2. set of 3D-e-Chem node features)
 
@@ -49,7 +49,7 @@ Note! The node must be available in the `https://3d-e-chem.github.io/updates` up
 
 # Releasing a new version of a KNIME node
 
-The updated KNIME node can be included in the 3D-e-Chem nodes feature be creating a (new release)[#new_release], see below.
+The updated KNIME node can be included in the 3D-e-Chem nodes feature be creating a (new release)[#new-release], see below.
 
 Note! The new version of the node must be available in the `https://3d-e-chem.github.io/updates` update site.
 
