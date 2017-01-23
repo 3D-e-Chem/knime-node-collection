@@ -49,7 +49,7 @@ Note! The node must be available in the `https://3d-e-chem.github.io/updates` up
 
 # Releasing a new version of a KNIME node
 
-The updated KNIME node can be included in the 3D-e-Chem nodes feature be creating a (new release)[#new-release], see below.
+The updated KNIME node can be included in the 3D-e-Chem nodes feature by creating a (new release)[#new-release], see below.
 
 Note! The new version of the node must be available in the `https://3d-e-chem.github.io/updates` update site.
 
