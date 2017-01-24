@@ -43,15 +43,12 @@ Pros:
 
 # Adding a new KNIME node
 
-To include a KNIME node into the 3D-e-Chem KNIME nodes feature, it's plugin must be added to config file called `feature/feature.xml`.
+To include a KNIME node into the 3D-e-Chem KNIME nodes feature, it's plugin(s) and optional 3D-e-Chem dependencies must be added to the `feature/feature.xml` file.
+Followed by making a [new release](#new-release), see below.
 
-Note! The node must be available in the `https://3d-e-chem.github.io/updates` update site.
+# Adding a new version of a KNIME node
 
-# Releasing a new version of a KNIME node
-
-The updated KNIME node can be included in the 3D-e-Chem nodes feature by creating a (new release)[#new-release], see below.
-
-Note! The new version of the node must be available in the `https://3d-e-chem.github.io/updates` update site.
+The updated KNIME node can be included in the 3D-e-Chem nodes feature by making a [new release](#new-release), see below.
 
 # Build
 
@@ -83,17 +80,30 @@ During import the Tycho Eclipse providers must be installed.
 
 # New release
 
-1. Make sure all included plugins are up to date on https://3d-e-chem.github.io/updates
-2. Update versions in pom files with
+1. Make sure the local clone of this repo is up to date using
 
-```
-mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<version>
-```
+    ```
+    git pull
+    ```
 
-3. Update `docs/` directory with new update site using
+2. Make sure all included plugins are up to date on https://3d-e-chem.github.io/updates or https://github.com/3D-e-Chem/3D-e-Chem.github.io/tree/master/updates
+3. Learn current version by looking in `./pom.xml` file for the `<version>x.y.z</version>` tag.
+4. Increase version. Increase minor version when KNIME node has been added. Increase patch version when KNIME node has been updated. Use following command to update multiple xml files with the new version.
 
-```
-mvn install
-```
+    ```
+    mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<new version>
+    ```
 
-4. Commit and push changes.
+5. Update `docs/` directory with new update site using
+
+    ```
+    mvn install
+    ```
+
+6. Stage new files, commit and push changes.
+
+    ```
+    git add docs/
+    git commit -a
+    git push
+    ```
