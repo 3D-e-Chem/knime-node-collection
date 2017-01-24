@@ -83,7 +83,7 @@ During import the Tycho Eclipse providers must be installed.
 
 # New release
 
-1. Make sure all included features are up to date on https://3d-e-chem.github.io/updates
+1. Make sure all included plugins are up to date on https://3d-e-chem.github.io/updates
 2. Update versions in pom files with
 
 ```
