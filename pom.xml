@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem.collection</groupId>
 	<artifactId>nl.esciencecenter.e3dchem.collection</artifactId>
-	<version>1.0.10</version>
+	<version>1.0.11-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -84,10 +84,7 @@
 					</dependencies>
 					<configuration>
 						<timestampProvider>jgit</timestampProvider>
-						<jgit.ignore>
-							pom.xml
-						</jgit.ignore>
-						<jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
+						<format>'v'yyyyMMddHHmm</format>
 					</configuration>
 				</plugin>
 			</plugins>

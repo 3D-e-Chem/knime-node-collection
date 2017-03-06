@@ -87,20 +87,21 @@ During import the Tycho Eclipse providers must be installed.
     ```
 
 2. Make sure all included plugins are up to date on https://3d-e-chem.github.io/updates or https://github.com/3D-e-Chem/3D-e-Chem.github.io/tree/master/updates
-3. Learn current version by looking in `./pom.xml` file for the `<version>x.y.z</version>` tag.
+3. Learn current version by looking in `./pom.xml` file for the `<version>x.y.z-SNAPSHOT</version>` tag.
 4. Increase version. Increase minor version when KNIME node has been added. Increase patch version when KNIME node has been updated. Use following command to update multiple xml files with the new version.
 
     ```
-    mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<new version>
+    mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<new version>-SNAPSHOT
     ```
 
-5. Update `docs/` directory with new update site using
+5. Commit changes
+6. Update `docs/` directory with new update site using
 
     ```
     mvn install
     ```
 
-6. Stage new files, commit and push changes.
+7. Stage new files, commit and push changes.
 
     ```
     git add docs/
