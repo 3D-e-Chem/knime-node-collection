@@ -749,6 +749,27 @@ Public License instead of this License.  But first, please read
          version="0.0.0"
          unpack="false"/>
 
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.pharmacophore.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.plants.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.silicosit.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
    <!-- List of dependencies which are part of the per repo update site at https://3d-e-chem.github.io/updates -->
    <plugin
          id="nl.esciencecenter.e3dchem.python.plugin"

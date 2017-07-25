@@ -8,7 +8,7 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 3.1 or higher
+* KNIME, https://www.knime.org, version 3.3 or higher
 
 Steps to get the 3D-e-Chem nodes inside KNIME:
 
