@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem.collection</groupId>
 	<artifactId>nl.esciencecenter.e3dchem.collection</artifactId>
-	<version>1.0.12-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -27,27 +27,27 @@
 	</prerequisites>
 
 	<properties>
-		                <knime.version>3.2</knime.version>
-                <knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
-                <knime.community.trusted.update.site>http://update.knime.org/community-contributions/trusted/${knime.version}/</knime.community.trusted.update.site>
+		<knime.version>3.3</knime.version>
+		<knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
+		<knime.community.trusted.update.site>http://update.knime.org/community-contributions/trusted/${knime.version}/</knime.community.trusted.update.site>
 
-		<tycho.version>0.26.0</tycho.version>
-		<tycho.extras.version>0.26.0</tycho.extras.version>
+		<tycho.version>1.0.0</tycho.version>
+		<tycho.extras.version>1.0.0</tycho.extras.version>
 		<tycho.test.jvmArgs>-Xmx512m</tycho.test.jvmArgs>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<repositories>
 		<repository>
-                        <id>knime</id>
-                        <layout>p2</layout>
-                        <url>${knime.update.site}</url>
-                </repository>
-                <repository>
-                        <id>knime trusted community</id>
-                        <layout>p2</layout>
-                        <url>${knime.community.trusted.update.site}</url>
-                </repository>
+			<id>knime</id>
+			<layout>p2</layout>
+			<url>${knime.update.site}</url>
+		</repository>
+		<repository>
+			<id>knime trusted community</id>
+			<layout>p2</layout>
+			<url>${knime.community.trusted.update.site}</url>
+		</repository>
 
 		<repository>
 			<id>3d-e-chem</id>
@@ -67,6 +67,33 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho.version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<pomDependencies>consider</pomDependencies>
+					<ignoreTychoRepositories>true</ignoreTychoRepositories>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
 			</plugin>
 		</plugins>
 		<pluginManagement>
