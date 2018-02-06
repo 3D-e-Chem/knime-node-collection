@@ -2,9 +2,8 @@ KNIME feature for all 3D-e-Chem nodes.
 
 [![Build Status](https://travis-ci.org/3D-e-Chem/knime-node-collection.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-node-collection)
 
-The 3D-e-chem project of the Netherlands eScience Center, VU Medicinal Chemistry
-CMBI Radboud University made a set of KNIME nodes listed at https://3d-e-chem.github.io/#repositories, this repository combines all the node into a single feature which has been
-included in the KNIME Community nodes.
+The 3D-e-chem project of the Netherlands eScience Center, VU Medicinal Chemistry, CMBI Radboud University made a set of KNIME nodes listed at https://3d-e-chem.github.io/#repositories, this repository combines all the node into a single feature which has been
+included in the [KNIME Community contributions](https://www.knime.com/3d-e-chem-nodes-for-knime).
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
@@ -26,7 +25,7 @@ Some nodes need Python packages, those nodes have install instructions in their 
 
 # Setup
 
-Each KNIME node developed in the 3D-e-Chem project has it own Github repository Eclipse feature and Eclipse plugin.
+Each KNIME node developed in the 3D-e-Chem project has it own Github repository, Eclipse feature and Eclipse plugin.
 
 The update site `https://3d-e-chem.github.io/updates` contains the Eclipse features of all the 3D-e-Chem developed nodes.
 When using this update site in KNIME, it will list all the nodes by their repository.
