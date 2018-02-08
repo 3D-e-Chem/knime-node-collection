@@ -2,8 +2,8 @@ KNIME feature for all 3D-e-Chem nodes.
 
 [![Build Status](https://travis-ci.org/3D-e-Chem/knime-node-collection.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-node-collection)
 
-The 3D-e-chem project of the Netherlands eScience Center, VU Medicinal Chemistry, CMBI Radboud University made a set of KNIME nodes listed at https://3d-e-chem.github.io/#repositories, this repository combines all the node into a single feature which has been
-included in the [KNIME Community contributions](https://www.knime.com/3d-e-chem-nodes-for-knime).
+The 3D-e-chem project of the Netherlands eScience Center, VU Medicinal Chemistry, CMBI Radboud University made a set of KNIME nodes listed at https://www.knime.com/3d-e-chem-nodes-for-knime, this repository combines all the nodes into a single feature which can be installed from the
+[community contributions update site](https://www.knime.com/community).
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
@@ -11,7 +11,7 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 3.3 or higher
+* KNIME, https://www.knime.org, version 3.5 or higher
 
 Steps to get the 3D-e-Chem nodes inside KNIME:
 
