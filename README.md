@@ -1,6 +1,7 @@
 KNIME feature for all 3D-e-Chem nodes.
 
 [![Build Status](https://travis-ci.org/3D-e-Chem/knime-node-collection.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-node-collection)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1168906.svg)](https://doi.org/10.5281/zenodo.1168906)
 
 The 3D-e-chem project of the Netherlands eScience Center, VU Medicinal Chemistry, CMBI Radboud University made a set of KNIME nodes listed at https://www.knime.com/3d-e-chem-nodes-for-knime, this repository combines all the nodes into a single feature which can be installed from the
 [community contributions update site](https://www.knime.com/community).
