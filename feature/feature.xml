@@ -733,12 +733,13 @@ Public License instead of this License.  But first, please read
          version="0.0.0"
          unpack="false"/>
 
-   <plugin
+    <!-- Exlude kripodb as it is not yet KNIME 4 compatible, see https://github.com/3D-e-Chem/knime-kripodb/pull/30 -->
+   <!-- <plugin
          id="nl.esciencecenter.e3dchem.kripodb.plugin"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
+         unpack="false"/> -->
 
    <plugin
          id="nl.esciencecenter.e3dchem.sygma.plugin"
@@ -754,12 +755,13 @@ Public License instead of this License.  But first, please read
          version="0.0.0"
          unpack="false"/>
 
-   <plugin
+    <!-- Exlude klifs as it is not yet KNIME 4 compatible, see https://github.com/3D-e-Chem/knime-klifs/pull/7 -->
+   <!-- <plugin
          id="nl.vu_compmedchem.klifs"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
+         unpack="false"/> -->
 
    <plugin
          id="nl.esciencecenter.e3dchem.knime.silicosit.plugin"
