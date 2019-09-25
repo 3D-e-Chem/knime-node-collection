@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-	<feature url="features/nl.esciencecenter.e3dchem.collection.feature-1.3.0.qualifier.jar"
-		id="nl.esciencecenter.e3dchem.collection.feature" version="1.3.0.qualifier">
+	<feature url="features/nl.esciencecenter.e3dchem.collection.feature-1.4.0.qualifier.jar"
+		id="nl.esciencecenter.e3dchem.collection.feature" version="1.4.0.qualifier">
 		<category name="org.knime.community.build.config/category.xml.cheminf" />
 	</feature>
 	<category-def name="org.knime.community.build.config/category.xml.cheminf" label="KNIME Community Contributions - Cheminformatics">
