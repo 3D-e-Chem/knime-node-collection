@@ -2,7 +2,7 @@
 <feature
       id="nl.esciencecenter.e3dchem.collection.feature"
       label="3D-e-Chem KNIME nodes"
-      version="1.1.6.qualifier"
+      version="1.1.7.qualifier"
       provider-name="Netherlands eScience Center &amp; Division of Medicinal Chemistry - VU University Amsterdam &amp; CMBI Radboud University"
       plugin="nl.esciencecenter.e3dchem.plugin"
       os="linux,macosx,win32"
@@ -709,56 +709,56 @@ Public License instead of this License.  But first, please read
          id="nl.esciencecenter.e3dchem.knime.pharmacophore.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.0.2.v201807051230"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.gpcrdb"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.4.0.201804041312"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.modifiedtanimoto"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.0.5"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.sstea.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.0.5"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.kripodb.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="2.4.1.v201912081158"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.sygma.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.2.0.v201912081158"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.knime.molviewer.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.1.2.v201712111638"
          unpack="false"/>
 
    <plugin
          id="nl.vu_compmedchem.klifs"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.1.1"
          unpack="false"/>
 
    <plugin
@@ -767,35 +767,35 @@ Public License instead of this License.  But first, please read
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.1.2.v201711081018"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.knime.plants.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="0.3.4.v201802070840"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.python.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="2.0.1.v201802071345"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.plugin"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.0.1"
          unpack="false"/>
 
    <plugin
          id="nl.esciencecenter.e3dchem.knime.molviewer.server"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.1.2.v201712111638"
          unpack="false"/>
 
    <plugin
@@ -804,7 +804,7 @@ Public License instead of this License.  But first, please read
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="0.3.4.v201802070840"
          fragment="true"/>
 
    <plugin
@@ -813,7 +813,7 @@ Public License instead of this License.  But first, please read
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="00.3.4.v201802070840"
          fragment="true"/>
 
    <plugin
@@ -822,7 +822,7 @@ Public License instead of this License.  But first, please read
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="0.3.4.v201802070840"
          fragment="true"/>
 
    <plugin
@@ -831,7 +831,7 @@ Public License instead of this License.  But first, please read
          arch="x86"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="0.3.4.v201802070840"
          fragment="true"/>
 
    <plugin
@@ -840,7 +840,7 @@ Public License instead of this License.  But first, please read
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.1.2.v201711081018"
          fragment="true"/>
 
    <plugin
@@ -849,7 +849,7 @@ Public License instead of this License.  But first, please read
          arch="x86_64"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.1.2.v201711081018"
          fragment="true"/>
 
 </feature>
