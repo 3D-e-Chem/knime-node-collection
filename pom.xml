@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem.collection</groupId>
 	<artifactId>nl.esciencecenter.e3dchem.collection</artifactId>
-	<version>1.4.2-SNAPSHOT</version>
+	<version>1.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -27,7 +27,7 @@
 	</prerequisites>
 
 	<properties>
-		<knime.version>4.0</knime.version>
+		<knime.version>4.3</knime.version>
 		<knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
 		<knime.community.trusted.update.site>http://update.knime.org/community-contributions/trusted/${knime.version}/</knime.community.trusted.update.site>
 		<tycho.version>1.4.0</tycho.version>
