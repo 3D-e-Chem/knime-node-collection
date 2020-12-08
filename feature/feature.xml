@@ -2,7 +2,7 @@
 <feature
       id="nl.esciencecenter.e3dchem.collection.feature"
       label="3D-e-Chem KNIME nodes"
-      version="1.4.2.qualifier"
+      version="1.5.0.qualifier"
       provider-name="Netherlands eScience Center &amp; Division of Medicinal Chemistry - VU University Amsterdam &amp; CMBI Radboud University"
       plugin="nl.esciencecenter.e3dchem.plugin"
       os="linux,macosx,win32"
@@ -17,10 +17,10 @@
    </copyright>
 
    <license url="http://www.gnu.org/licenses/gpl-3.0.txt">
-      Included in PLANTS nodes plugin is the PLANTS executable with academic license (http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html). 
+      Included in PLANTS nodes plugin is the PLANTS executable with academic license (http://www.mnf.uni-tuebingen.de/fachbereiche/pharmazie-und-biochemie/pharmazie/pharmazeutische-chemie/pd-dr-t-exner/research/plants.html).
 By accepting this license agreement, you agree to use the included PLANTS executable only for academic usage.
 To use these nodes in a commercial manner you need to acquire a valid license yourself and configure the PLANTS node to use the commercial executable.
-   
+
       Some plugins are licensed under GNU GPLv3 so this feature is also licensed under GNU GPLv3.
       Most plugins are licensed under the Apache License 2.0 and can be installed separately from the https://3d-e-chem.github.io/updates update site.
 
@@ -734,20 +734,6 @@ Public License instead of this License.  But first, please read
          unpack="false"/>
 
    <plugin
-         id="nl.esciencecenter.e3dchem.kripodb.plugin"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="nl.esciencecenter.e3dchem.sygma.plugin"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="nl.esciencecenter.e3dchem.knime.molviewer.plugin"
          download-size="0"
          install-size="0"
@@ -772,13 +758,6 @@ Public License instead of this License.  But first, please read
 
    <plugin
          id="nl.esciencecenter.e3dchem.knime.plants.plugin"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="nl.esciencecenter.e3dchem.python.plugin"
          download-size="0"
          install-size="0"
          version="0.0.0"
