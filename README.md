@@ -1,6 +1,6 @@
 KNIME feature for all 3D-e-Chem nodes.
 
-[![Java CI with Maven](https://github.com/3D-e-Chem/knime-node-collection./workflows/Build/badge.svg)](https://github.com/3D-e-Chem/knime-node-collection./actions?query=workflow%3A%22Build%22)
+[![Java CI with Maven](https://github.com/3D-e-Chem/knime-node-collection./workflows/Package/badge.svg)](https://github.com/3D-e-Chem/knime-node-collection./actions?query=workflow%3A%22Package%22)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1168906.svg)](https://doi.org/10.5281/zenodo.1168906)
 
 The 3D-e-chem project of the Netherlands eScience Center, VU Medicinal Chemistry, CMBI Radboud University made a set of KNIME nodes listed at https://www.knime.com/3d-e-chem-nodes-for-knime, this repository combines all the nodes into a single feature which can be installed from the
