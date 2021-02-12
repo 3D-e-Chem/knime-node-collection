@@ -1,6 +1,6 @@
 KNIME feature for all 3D-e-Chem nodes.
 
-[![Build Status](https://travis-ci.org/3D-e-Chem/knime-node-collection.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-node-collection)
+[![Java CI with Maven](https://github.com/3D-e-Chem/knime-node-collection./workflows/Package/badge.svg)](https://github.com/3D-e-Chem/knime-node-collection./actions?query=workflow%3A%22Package%22)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1168906.svg)](https://doi.org/10.5281/zenodo.1168906)
 
 The 3D-e-chem project of the Netherlands eScience Center, VU Medicinal Chemistry, CMBI Radboud University made a set of KNIME nodes listed at https://www.knime.com/3d-e-chem-nodes-for-knime, this repository combines all the nodes into a single feature which can be installed from the
@@ -12,7 +12,7 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 4.0 or higher
+- KNIME, https://www.knime.org, version 4.3 or higher
 
 Steps to get the 3D-e-Chem nodes inside KNIME:
 
@@ -36,15 +36,15 @@ When using this update site in KNIME, it will list a single feature for all 3D-e
 
 Cons of using this repo:
 
-* New nodes need to be tracked in the feature/feature.xml file
-* Each update of a node requires a new release of this repo aswell
-* License is for all nodes together instead of separate license for each node
-* Maintenance overhead of 2 update sites (1. only one 3D-e-Chem nodes feature, 2. set of 3D-e-Chem node features)
+- New nodes need to be tracked in the feature/feature.xml file
+- Each update of a node requires a new release of this repo aswell
+- License is for all nodes together instead of separate license for each node
+- Maintenance overhead of 2 update sites (1. only one 3D-e-Chem nodes feature, 2. set of 3D-e-Chem node features)
 
 Pros of using this repo:
 
-* Single checkbox to install all 3D-e-Chem nodes
-* Integrated into KNIME Community Contributions update site under `KNIME Community nodes - Cheminformatics` folder. Users do not need to configure an extra update site.
+- Single checkbox to install all 3D-e-Chem nodes
+- Integrated into KNIME Community Contributions update site under `KNIME Community nodes - Cheminformatics` folder. Users do not need to configure an extra update site.
 
 So to have the latest version of each node you should use `https://3d-e-chem.github.io/updates`, but for stable releases use `https://3d-e-chem.github.io/knime-node-collection`.
 
@@ -82,34 +82,34 @@ During import the Tycho Eclipse providers must be installed.
 
 1. Make sure the local clone of this repo is up to date using
 
-    ```
-    git pull
-    ```
+   ```
+   git pull
+   ```
 
 2. Make sure all included plugins are up to date on https://3d-e-chem.github.io/updates or https://github.com/3D-e-Chem/3D-e-Chem.github.io/tree/master/updates
 3. Learn current version by looking in `./pom.xml` file for the `<version>x.y.z-SNAPSHOT</version>` tag.
 4. Increase version. Increase minor version when KNIME node has been added or removed. Increase patch version when KNIME node has been updated. Use following command to update multiple xml files with the new version.
 
-    ```
-    mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<new version>-SNAPSHOT
-    ```
+   ```
+   mvn org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=<new version>-SNAPSHOT
+   ```
 
 5. Commit changes
-6. Update `docs/` directory with new update site using
+6. Update `docs/4.3/` directory with new update site using
 
-    ```
-    mvn install
-    ```
+   ```
+   mvn install
+   ```
 
 7. Stage new files, commit and push changes.
 
-    ```
-    git add docs/
-    git commit -a
-    git push
-    ```
+   ```
+   git add docs/
+   git commit -a
+   git push
+   ```
 
 8. For major or minor release
 
-  * add message to https://www.knime.com/forum/3d-e-chem-nodes
-  * create a GitHub release and DOI entry
+- add message to https://www.knime.com/forum/3d-e-chem-nodes
+- create a GitHub release and DOI entry
