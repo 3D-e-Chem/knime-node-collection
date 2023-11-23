@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem.collection</groupId>
 	<artifactId>nl.esciencecenter.e3dchem.collection</artifactId>
-	<version>1.6.0-SNAPSHOT</version>
+	<version>1.7.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
@@ -18,8 +18,8 @@
 		<url>https://github.com/3D-e-Chem/knime-node-collection/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Travis CI</system>
-		<url>http://travis-ci.org/3D-e-Chem/knime-node-collection</url>
+		<system>GitHub</system>
+		<url>https://github.com/3D-e-Chem/knime-node-collection/actions</url>
 	</ciManagement>
 
 	<prerequisites>
@@ -27,12 +27,14 @@
 	</prerequisites>
 
 	<properties>
-		<knime.version>4.3</knime.version>
+		<knime.version>5.1</knime.version>
 		<knime.update.site>http://update.knime.org/analytics-platform/${knime.version}/</knime.update.site>
 		<knime.community.trusted.update.site>http://update.knime.org/community-contributions/trusted/${knime.version}/</knime.community.trusted.update.site>
-		<tycho.version>1.4.0</tycho.version>
-		<tycho.extras.version>1.4.0</tycho.extras.version>
+		<tycho.version>2.7.5</tycho.version>
+		<tycho.extras.version>${tycho.version}</tycho.extras.version>
 		<tycho.test.jvmArgs>-Xmx512m</tycho.test.jvmArgs>
+		<java.version>17</java.version>
+		<maven.compiler.version>3.10.1</maven.compiler.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<tycho.scmUrl>scm:git:https://github.com/3D-e-Chem/knime-node-collection.git</tycho.scmUrl>
@@ -52,7 +54,7 @@
 		<repository>
 			<id>3d-e-chem</id>
 			<layout>p2</layout>
-			<url>https://3d-e-chem.github.io/updates</url>
+			<url>https://3d-e-chem.github.io/updates/5.1</url>
 		</repository>
 	</repositories>
 	<build>
@@ -113,11 +115,6 @@
                     </execution>
                 </executions>
             </plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho.extras</groupId>
-				<artifactId>tycho-pack200a-plugin</artifactId>
-				<version>${tycho.extras.version}</version>
-			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>

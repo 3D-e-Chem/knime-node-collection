@@ -12,7 +12,7 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 
 Requirements:
 
-- KNIME, https://www.knime.org, version 4.3 or higher
+* KNIME, https://www.knime.org, version 5.1 or higher
 
 Steps to get the 3D-e-Chem nodes inside KNIME:
 
@@ -28,7 +28,7 @@ Some nodes need Python packages, those nodes have install instructions in their 
 
 Each KNIME node developed in the 3D-e-Chem project has it own Github repository, Eclipse feature and Eclipse plugin.
 
-The update site `https://3d-e-chem.github.io/updates` contains the Eclipse features of all the 3D-e-Chem developed nodes.
+The update site `https://3d-e-chem.github.io/updates/5.1` contains the Eclipse features of all the 3D-e-Chem developed nodes.
 When using this update site in KNIME, it will list all the nodes by their repository.
 
 This update site `https://3d-e-chem.github.io/knime-node-collection` contains a single Eclipse feature which combines all the 3D-e-Chem developed nodes.
@@ -46,7 +46,7 @@ Pros of using this repo:
 - Single checkbox to install all 3D-e-Chem nodes
 - Integrated into KNIME Community Contributions update site under `KNIME Community nodes - Cheminformatics` folder. Users do not need to configure an extra update site.
 
-So to have the latest version of each node you should use `https://3d-e-chem.github.io/updates`, but for stable releases use `https://3d-e-chem.github.io/knime-node-collection`.
+So to have the latest version of each node you should use `https://3d-e-chem.github.io/updates/5.1`, but for stable releases use `https://3d-e-chem.github.io/knime-node-collection`.
 
 # Adding a new KNIME node
 
@@ -70,11 +70,11 @@ The update site can be used to perform a local installation.
 
 Steps to get development environment setup based on https://github.com/knime/knime-sdk-setup#sdk-setup:
 
-1. Install Java 8
-2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-rcp-and-rap-developers)
-3. Configure Java 8 inside Eclipse Window > Preferences > Java > Installed JREs
+1. Install Java 17
+2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/installer)
+3. Configure Java 17 inside Eclipse Window > Preferences > Java > Installed JREs
 4. Import this repo as an Existing Maven project
-5. Add http://update.knime.org/analytics-platform/4.0 and https://3d-e-chem.github.io/updates to list of update sites
+5. Add http://update.knime.org/analytics-platform/5.1 and https://3d-e-chem.github.io/updates/5.1 to list of update sites
 
 During import the Tycho Eclipse providers must be installed.
 

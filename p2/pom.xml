@@ -5,7 +5,7 @@
 	<parent>
 		<artifactId>nl.esciencecenter.e3dchem.collection</artifactId>
 		<groupId>nl.esciencecenter.e3dchem.collection</groupId>
-		<version>1.6.0-SNAPSHOT</version>
+		<version>1.7.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>nl.esciencecenter.e3dchem.collection.p2</artifactId>
 	<packaging>eclipse-repository</packaging>
@@ -28,7 +28,7 @@
 									<url>${project.build.directory}/repository</url>
 								</repository>
 							</source>
-							<destination>../docs/4.3</destination>
+							<destination>../docs/5.1</destination>
 							<name>3D-e-Chem KNIME node collection</name>
 							<xzCompress>true</xzCompress>
 						</configuration>
