@@ -28,7 +28,7 @@
 									<url>${project.build.directory}/repository</url>
 								</repository>
 							</source>
-							<destination>../docs/4.3</destination>
+							<destination>../docs/5.1</destination>
 							<name>3D-e-Chem KNIME node collection</name>
 							<xzCompress>true</xzCompress>
 						</configuration>
